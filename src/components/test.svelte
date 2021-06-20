@@ -7,7 +7,7 @@
 <div>
   <h1>helloooooooooooooooooooooo</h1>
   <p>{test}</p>
-  <img src="./resources/img/logo.png" alt="">
+  <img src="../resources/img/logo.png" alt="">
 </div>
 
 <style lang="scss">
