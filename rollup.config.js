@@ -50,7 +50,7 @@ export default {
 		// a separate file - better for performance
 		scss({
 			output: './public/style/bundle.css',
-			outputStyle: "compressed"
+			outputStyle: "compressed",
 		}),
 
 		// If you have external dependencies installed from
@@ -77,6 +77,7 @@ export default {
 		production && terser()
 	],
 	watch: {
-		clearScreen: false
+		clearScreen: false,
+		include: 'src/**',
 	}
 };
