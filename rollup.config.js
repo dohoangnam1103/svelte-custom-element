@@ -49,7 +49,8 @@ export default {
 		// we'll extract any component CSS out into
 		// a separate file - better for performance
 		scss({
-			output: './public/style/bundle.css'
+			output: './public/style/bundle.css',
+			outputStyle: "compressed"
 		}),
 
 		// If you have external dependencies installed from
