@@ -6,20 +6,3 @@
     src: url('/resources/fonts/livvic-v8-vietnamese_latin-regular.woff') format('woff');
     src: url('/resources/fonts/livvic-v8-vietnamese_latin-regular.woff2') format('woff2');
 }
-
-a {
-    color: blue;
-}
-
-#abc {
-    font-family: 'livvic';
-    color: red;
-
-    #xyz {
-        color: green;
-    }
-}
-
-body {
-    font-family: 'livvic';
-}
