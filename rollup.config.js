@@ -45,10 +45,31 @@ export default {
 				// enable run-time checks when not in production
 				dev: !production,
 				customElement: true,
-				tag: null
+				tag: null,
 			},
+			include: 'src/custom-component/**/*.svelte',
 			preprocess: preprocess()
 		}),
+		svelte({
+			compilerOptions: {
+				// enable run-time checks when not in production
+				dev: !production,
+				customElement: false,
+			},
+			include: 'src/component/**/*.svelte',
+			preprocess: preprocess()
+		}),
+		// svelte({
+		// 	compilerOptions: {
+		// 		// enable run-time checks when not in production
+		// 		dev: !production,
+		// 		customElement: false,
+		// 	},
+		// 	extensions: ['.svelte'],
+		// 	preprocess: preprocess()
+		// }),
+		// svelte({ compilerOptions: { customElement: true, }, include: /\.wc\.svelte$/, }),
+    	// svelte({ compilerOptions: { customElement: false, }, exclude: /\.wc\.svelte$/, }),
 		// we'll extract any component CSS out into
 		// a separate file - better for performance
 		
